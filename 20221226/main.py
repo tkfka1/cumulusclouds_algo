@@ -39,8 +39,6 @@ for i in range(int(lenth)):
 
 
 
-
-
 # 구름 IDE 용
 
 # answer = ""
@@ -66,4 +64,3 @@ for i in range(int(lenth)):
 # 		print(temp)
 # 	else:
 # 		print("???")
-
