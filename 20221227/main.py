@@ -46,11 +46,30 @@ else:
 
 
 
+# 너무 느려서 폐기 1
+# /////////////////////////////////////////////////
+# import math
+
+# input_vals = list(map(int, input().split(" ")))
+# min_val, max_val = min(input_vals), max(input_vals)
+# table = [0] * (max_val+1)
+
+# for i in range(2, max_val+1):
+# 	val = i * math.ceil(min_val / i)
+# 	while (val <= max_val):
+# 		table[i] += 1
+# 		val += i
+
+# max_num = max(table)
+# index = table.index(max_num)
+# print(index)
+# /////////////////////////////////////////////////
 
 
 
 
-## 너무 느려서 폐기
+
+## 너무 느려서 폐기 2
 # f = open("20221227/testcase1.txt", 'r')
 
 # user_input = f.readline()
