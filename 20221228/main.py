@@ -31,7 +31,7 @@ for i in range(int(lenth)):
 li = sorted(li)
 print(li)
 
-prestart = 0
+prestart = li[0][0]
 end = 650
 
 for i in li:
@@ -41,13 +41,60 @@ for i in li:
 		prestart = i[0]
 		end = i[1]
 	else:
-		print("No")
-		break
-	print(i)
+		if i[0] >= end:
+			prestart = i[0]
+			end = i[1]
+		else:
+			print("No")
+			break
+	# print(i)
 else:
 	print("Yes")
 					
 					
 					
-					
+
+## 구름
+
+# lenth = input()
+# li = []
+
+# ## 시작월 *1000000 시작일 *10000 종료월 *100 종료일 *1
+
+# for i in range(int(lenth)):
+	
+# 	x = input()
+
+# 	temp = 0
+
+# 	x = x.split(" ")
+# 	x[0] = x[0].split("/")
+# 	x[1] = x[1].split("/")
+	
+# 	temp = ((int(x[0][0])*50) + int(x[0][1]) , (int(x[1][0])*50) + int(x[1][1]))
+	
+# 	li.append(temp)
+
+# li = sorted(li)
+# # print(li)
+
+# prestart = li[0][0]
+# end = 650
+
+# for i in li:
+# 	if prestart == i[0]:
+# 		end = min(end,i[1])
+# 	elif end >= i[1]:
+# 		prestart = i[0]
+# 		end = i[1]
+# 	else:
+# 		if i[0] >= end:
+# 			prestart = i[0]
+# 			end = i[1]
+# 		else:
+# 			print("No")
+# 			break
+# 	# print(i)
+# else:
+# 	print("Yes")
 					
