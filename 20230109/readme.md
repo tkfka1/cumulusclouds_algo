@@ -9,38 +9,42 @@
 ## testcase 1
 input
 ```
-50 60
+9 2
+ABCCBCCDA
 ```
 output
 ```
-3
+ADA
 ```
 ## testcase 2
 input
 ```
-180 214
+10 3
+ABCCCBBAAA
 ```
 output
 ```
-45
+CLEAR!
 ```
 ## testcase 3
 input
 ```
-4429 3893
+30 2
+ABEBADEEBDCDABABECCAEDACBBABDC
 ```
 output
 ```
-21437
+ABEBADBDCDABABEAEDACABDC
 ```
 ## testcase 4
 input
 ```
-1000000000 7
+10 2
+ABAAACBCCA
 ```
 output
 ```
-0
+ABCBA
 ```
 
 
@@ -54,4 +58,6 @@ output
 
 ## 푼 방식
 
-가로 세로방식으로 배치할수 있는 a4용지 개수를 더한다음 두개가 중복되어서 있는 개수를 뺀다
+리스트에서 하나씩 가고 stack에 저장된 알파벳의 갯수를 저장하고 그것이 m값을 넘을 경우 반대쪽 list인 afterli에 넘겨진 알파벳을 pop 한다.
+
+해설 : 스택사용 ex) (a,1),(b,2) ~~ 
